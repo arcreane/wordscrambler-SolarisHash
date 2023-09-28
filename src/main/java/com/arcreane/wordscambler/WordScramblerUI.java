@@ -12,20 +12,20 @@ public class WordScramblerUI {
         long timer = System.currentTimeMillis();
         boolean play = true;
 
-        System.out.println("Quel est le mot :");
 
         while(play){
             boolean manche = true;
             int tentative = 1;
             Random rand = new Random();
 
-            long randomLine = rand.nextLong(game.wordTri.size());
-            String wordSelected = game.wordTri.get((int)randomLine).trim().toLowerCase();
+            int randomLine = rand.nextInt(game.wordTri.size());
+            String wordSelected = game.wordTri.get(randomLine).trim().toLowerCase();
             String wordMixed = game.mixWords(wordSelected);
 
-            System.out.println("Mots a trouver " + wordMixed);
 
             while(manche){
+                System.out.println("Mots a trouver : " + wordMixed);
+                System.out.println("Quel est le mot : ");
                 Scanner scan = new Scanner(System.in);
                 String answer = scan.nextLine();
 
@@ -48,12 +48,13 @@ public class WordScramblerUI {
                         System.out.println("Voulez-vous abandonné ?");
                         System.out.println("1.Oui \t 2.Non");
                         scan = new Scanner(System.in);
-                        int choix = scan.nextInt();
-                        if(choix == 1)
-                            break;
-
+                        int choice = scan.nextInt();
+                        if(choice == 1) {
+                            manche = false;
+                            play = false;
+                        }
                     }
-                    System.out.println("Mots a trouver " + wordMixed);
+                    //System.out.println("Mots a trouver " + wordMixed);
                 }
             }
         }
