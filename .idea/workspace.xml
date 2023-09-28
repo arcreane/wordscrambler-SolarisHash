@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Console version">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Modification WordScramblerFX,enlève de certains fichiers inutiles">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/select-difficulty.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/GameConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/GameConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="FxmlFile" />
       </list>
     </option>
@@ -78,6 +79,15 @@
       <option name="presentableId" value="Default" />
       <updated>1695907854413</updated>
     </task>
+    <task id="LOCAL-00001" summary="Modification WordScramblerFX,enlève de certains fichiers inutiles">
+      <option name="closed" value="true" />
+      <created>1695911296231</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695911296231</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Console version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Console version" />
+    <MESSAGE value="Modification WordScramblerFX,enlève de certains fichiers inutiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification WordScramblerFX,enlève de certains fichiers inutiles" />
   </component>
 </project>

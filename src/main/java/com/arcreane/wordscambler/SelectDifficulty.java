@@ -10,8 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloController {
-
+public class SelectDifficulty {
     @FXML
     private Button buttonEasy;
     @FXML
