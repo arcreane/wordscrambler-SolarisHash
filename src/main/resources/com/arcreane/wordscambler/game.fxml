@@ -4,11 +4,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arcreane.wordscambler.SelectDifficulty">
-   <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="222.0" prefHeight="103.0" prefWidth="258.0" text="Le jeu ce passera ici" AnchorPane.bottomAnchor="74.8" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="171.60000000000002" AnchorPane.topAnchor="222.0">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
-   </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="labelDifficulty" alignment="CENTER" contentDisplay="CENTER" layoutX="170.0" layoutY="222.0"
+               prefHeight="103.0" prefWidth="258.0" AnchorPane.bottomAnchor="74.8" AnchorPane.leftAnchor="170.0"
+               AnchorPane.rightAnchor="171.60000000000002" AnchorPane.topAnchor="222.0">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+    </children>
 </AnchorPane>
