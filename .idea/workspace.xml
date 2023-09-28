@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Modification WordScramblerFX,enlève de certains fichiers inutiles">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/select-difficulty.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/home.fxml" afterDir="false" />
+    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Lien entre la fenetre home et la fenetre de selection">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/select-difficulty.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/select-difficulty.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695911296231</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lien entre la fenetre home et la fenetre de selection">
+      <option name="closed" value="true" />
+      <created>1695914816584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695914816584</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Console version" />
     <MESSAGE value="Modification WordScramblerFX,enlève de certains fichiers inutiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification WordScramblerFX,enlève de certains fichiers inutiles" />
+    <MESSAGE value="Lien entre la fenetre home et la fenetre de selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lien entre la fenetre home et la fenetre de selection" />
   </component>
 </project>
