@@ -17,11 +17,18 @@ public class HomeController {
     private Button buttonPlay;
     @FXML
     protected void play(ActionEvent event) throws IOException {
-        //FXMLLoader fxmlLoader = new FXMLLoader(HomeController.class.getResource("select-difficulty.fxml"));
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("select-difficulty.fxml")));
-        Scene scene = new Scene(root, 800, 400);
-        Stage stage = (Stage) buttonPlay.getScene().getWindow(); // Obtenez le Stage actuel
-        stage.setScene(scene);
-        stage.show();
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game.fxml"));
+            //Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game.fxml")));
+            //Scene scene = new Scene(root, 800, 400);
+            Scene scene = new Scene((Parent) fxmlLoader.load(), 800, 400);
+            Stage stage = (Stage) buttonPlay.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }

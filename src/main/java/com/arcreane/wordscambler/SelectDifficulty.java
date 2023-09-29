@@ -13,7 +13,7 @@ import java.util.Objects;
 
 
 public class SelectDifficulty {
-    private WordScramblerFX game;
+    //private WordScramblerFX game;
 
     @FXML
     private Button buttonEasy;
@@ -30,14 +30,14 @@ public class SelectDifficulty {
             FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("game.fxml")));
             Parent root = loader.load();
             Scene scene = new Scene(root, 800, 400);
-            game = loader.getController();
-            game.setDifficulty(1);
+            //game = loader.getController();
+            //game.setDifficulty(1);
+            WordScramblerFX game = new WordScramblerFX();
             Stage stage = (Stage) buttonEasy.getScene().getWindow(); // Obtenez le Stage actuel
             stage.setScene(scene);
         }catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     @FXML
@@ -45,8 +45,8 @@ public class SelectDifficulty {
         FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("game.fxml")));
         Parent root = loader.load();
         Scene scene = new Scene(root, 800, 400);
-        game = loader.getController();
-        game.setDifficulty(2);
+        //game = loader.getController();
+        //game.setDifficulty(2);
         Stage stage = (Stage) buttonMedium.getScene().getWindow(); // Obtenez le Stage actuel
         stage.setScene(scene);
 
@@ -57,8 +57,8 @@ public class SelectDifficulty {
         FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("game.fxml")));
         Parent root = loader.load();
         Scene scene = new Scene(root, 800, 400);
-        game = loader.getController();
-        game.setDifficulty(3);
+        //game = loader.getController();
+        //game.setDifficulty(3);
         Stage stage = (Stage) buttonHard.getScene().getWindow(); // Obtenez le Stage actuel
         stage.setScene(scene);
 

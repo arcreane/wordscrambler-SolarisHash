@@ -16,6 +16,7 @@ public class WordScramblerGame {
     String myFile;
     ArrayList<String> wordTri;
 
+    @FXMLController
     public WordScramblerGame(int p_difficulty){
         difficulty = p_difficulty;
         score = 100;

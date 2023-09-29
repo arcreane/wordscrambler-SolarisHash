@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("home.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("game.fxml"));
         Scene scene = new Scene((Parent) fxmlLoader.load(), 800, 400);
         stage.setTitle("Hello!");
         stage.setScene(scene);
@@ -20,7 +20,7 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
-        WordScramblerUI gameUI;
+        WordScramberConsole gameConsole;
         int choix;
 
         System.out.println("Voulez vous jouer en version console ou version graphique ?");
@@ -31,8 +31,8 @@ public class HelloApplication extends Application {
         while(choix != 1 || choix != 2){
 
             if(choix == 1){
-                gameUI = new WordScramblerUI();
-                gameUI.startGameUI();
+                gameConsole = new WordScramberConsole();
+                gameConsole.startGameConsole();
                 break;
             }
             else if(choix == 2){

@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Affichage graphique Jeu">
+    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Difficulté set via Button">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramberConsole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,34 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Adam/Desktop/JAVA/demo",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adam/Desktop/JAVA/demo&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.arcreane.wordscambler" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="WordScambler" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="WordScambler" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -124,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695949431903</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Difficulté set via Button">
+      <option name="closed" value="true" />
+      <created>1695972405376</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1695972405376</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +144,7 @@
     <MESSAGE value="Lien entre la fenetre selection et la fenetre de jeu" />
     <MESSAGE value="Essai d'ajout de la difficulté sur l'interface graphique" />
     <MESSAGE value="Affichage graphique Jeu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Affichage graphique Jeu" />
+    <MESSAGE value="Difficulté set via Button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Difficulté set via Button" />
   </component>
 </project>

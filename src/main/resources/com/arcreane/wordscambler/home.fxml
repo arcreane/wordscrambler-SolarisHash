@@ -6,16 +6,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="BOTTOM_CENTER" prefHeight="541.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arcreane.wordscambler.HomeController">
+<VBox alignment="BOTTOM_CENTER" prefHeight="541.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/20.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arcreane.wordscambler.HomeController">
     <children>
         <Button fx:id="buttonPlay" mnemonicParsing="false" onAction="#play" text="JOUER">
             <VBox.margin>
-                <Insets bottom="100.0" />
+                <Insets bottom="100.0"/>
             </VBox.margin>
             <font>
-                <Font name="Agency FB Bold" size="36.0" />
+                <Font name="Agency FB Bold" size="36.0"/>
             </font>
         </Button>
-        <Label text="WordScrambrler" />
+        <Label text="WordScrambrler"/>
     </children>
 </VBox>
