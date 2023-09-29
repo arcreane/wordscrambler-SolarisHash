@@ -9,10 +9,6 @@ import java.util.*;
 
 public class WordScramblerGame {
     String goodWord;
-    long score;
-    int tentative;
-    long timer;
-    boolean play = true;
     int difficulty;
     String myFile;
     ArrayList<String> wordTri;
@@ -20,8 +16,7 @@ public class WordScramblerGame {
     @FXMLController
     public WordScramblerGame(int p_difficulty) {
         difficulty = p_difficulty;
-        score = 100;
-        timer = System.currentTimeMillis();
+
         myFile = "src/main/resources/com/arcreane/wordscambler/words.txt";
 
         List<String> loadedWords = loadWordsFromFile(myFile);
@@ -88,7 +83,7 @@ public class WordScramblerGame {
         return p_userAnswer.equals(p_basicWord);
     }
 
-    public long calculScore (long p_score, long p_startTime, long p_endTime){
+    public static long calculScore(long p_score, long p_startTime, long p_endTime){
         p_score -= (p_startTime - p_endTime) / 1000;
         return p_score;
     }

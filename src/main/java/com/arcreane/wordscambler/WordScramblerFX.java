@@ -10,6 +10,7 @@ import javafx.scene.layout.VBox;
 
 import java.io.IOException;
 import java.util.Random;
+import javax.swing.*;
 public class WordScramblerFX {
     @FXML
     private Button buttonEasy;
@@ -63,6 +64,7 @@ public class WordScramblerFX {
         WordScramblerGame game = new WordScramblerGame(difficulty);
         score = game.calculScore(score, startTime,endtime);
         updateLabel(scoreShow, "score : " + score);
+        startTime = System.currentTimeMillis();
 
         int tentative = 1;
         Random rand = new Random();
@@ -84,11 +86,15 @@ public class WordScramblerFX {
         System.out.println("wordMixed: " + wordMixed);
         if(WordScramblerGame.Verification(userAnswer, basicWord)){
             updateLabel(alert,"Bravo");
+            endtime = System.currentTimeMillis();
+
+            updateLabel(scoreShow, ""+WordScramblerGame.calculScore(score, startTime, endtime));
         }
         else
         {
             updateLabel(alert,"Rater");
         }
+
     }
 
 
