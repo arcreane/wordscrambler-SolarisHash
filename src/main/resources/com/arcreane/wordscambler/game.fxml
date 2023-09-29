@@ -5,24 +5,36 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arcreane.wordscambler.WordScramblerFX">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arcreane.wordscambler.WordScramblerFX">
     <children>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
             <children>
-                <Button fx:id="easy" onAction="#easy" mnemonicParsing="false" text="Easy"/>
-                <Button fx:id="medium" mnemonicParsing="false" text="Medium"/>
-                <Button fx:id="hard" mnemonicParsing="false" text="Hard"/>
+                <Button fx:id="easy" mnemonicParsing="false" onAction="#easy" text="Easy" />
+                <Button fx:id="medium" mnemonicParsing="false" onAction="#medium" text="Medium" />
+                <Button fx:id="hard" mnemonicParsing="false" onAction="#hard" text="Hard" />
             </children>
         </HBox>
-        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+        <VBox alignment="CENTER" prefHeight="247.0" prefWidth="600.0" spacing="15.0">
             <children>
-                <Label text="Mots a trouver : "/>
-                <Label fx:id="wordToFind" text="Label"/>
-                <TextField maxWidth="200.0"/>
-                <Button fx:id="validateButton" mnemonicParsing="false" text="Valider"/>
+                <Label text="Mots a trouver : ">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="wordToFind" text="Label">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField maxWidth="200.0" />
+                <Button fx:id="validateButton" mnemonicParsing="false" text="Valider">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="response" />
             </children>
         </VBox>
     </children>
