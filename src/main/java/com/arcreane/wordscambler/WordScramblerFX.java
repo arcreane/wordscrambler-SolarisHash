@@ -1,16 +1,20 @@
 package com.arcreane.wordscambler;
 
+import javafx.animation.Animation;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+
 
 import java.io.IOException;
+import javafx.util.Duration;
 import java.util.Random;
-import javax.swing.*;
+
 public class WordScramblerFX {
     @FXML
     private Button buttonEasy;
@@ -33,13 +37,17 @@ public class WordScramblerFX {
     @FXML
     private Label scoreShow;
     @FXML
+    private Label timeLabel;
+    @FXML
     private TextField wordAnswer;
+
+    private Timeline timeline;
 
     public int difficulty;
     long score;
     long startTime;
     long endtime;
-    int timer;
+    int timerValue;
     String basicWord;
     String wordMixed;
     boolean result;
@@ -52,6 +60,7 @@ public class WordScramblerFX {
         test = new Label();
         alert = new Label();
         scoreShow = new Label();
+        timeLabel = new Label();
         wordAnswer = new TextField();
         score = 100;
         startTime = 0;
@@ -62,8 +71,10 @@ public class WordScramblerFX {
     public void setDifficulty(int p_difficulty) {
         this.difficulty = p_difficulty;
         WordScramblerGame game = new WordScramblerGame(difficulty);
-        score = game.calculScore(score, startTime,endtime);
+        score = game.calculScore(score, startTime, endtime);
         updateLabel(scoreShow, "score : " + score);
+
+        startTimer();
         startTime = System.currentTimeMillis();
 
         int tentative = 1;
@@ -82,25 +93,21 @@ public class WordScramblerFX {
     public void validate(ActionEvent event) {
 
         String userAnswer = wordAnswer.getText().trim().toLowerCase();
-        System.out.println("userAnswer: " + userAnswer);
-        System.out.println("wordMixed: " + wordMixed);
-        if(WordScramblerGame.Verification(userAnswer, basicWord)){
-            updateLabel(alert,"Bravo");
+
+        if (WordScramblerGame.Verification(userAnswer, basicWord)) {
+            updateLabel(alert, "Bravo");
             endtime = System.currentTimeMillis();
 
-            updateLabel(scoreShow, ""+WordScramblerGame.calculScore(score, startTime, endtime));
-        }
-        else
-        {
-            updateLabel(alert,"Rater");
+            updateLabel(scoreShow, "" + WordScramblerGame.calculScore(score, startTime, endtime));
+        } else {
+            updateLabel(alert, "Rater");
         }
 
     }
 
 
-
     @FXML
-    public void updateLabel(Label label, String text){
+    public void updateLabel(Label label, String text) {
         label.setText(text);
     }
 
@@ -115,9 +122,27 @@ public class WordScramblerFX {
     }
 
     @FXML
-    protected void hard(ActionEvent event) throws IOException{
+    protected void hard(ActionEvent event) throws IOException {
         setDifficulty(3);
     }
 
+    private void startTimer() {
+        Duration duration = Duration.seconds(1);
+        KeyFrame keyFrame = new KeyFrame(duration, event -> {
+            timerValue++;
+            timeLabel.setText(getTimeString(timerValue));
+        });
+
+        Timeline timeline = new Timeline(keyFrame);
+        timeline.setCycleCount(Animation.INDEFINITE);
+
+        timeline.play();
+    }
+
+    private String getTimeString(int seconds) {
+        int minutes = seconds / 60;
+        int remainingSeconds = seconds % 60;
+        return String.format("%02d:%02d", minutes, remainingSeconds);
+    }
 }
 
