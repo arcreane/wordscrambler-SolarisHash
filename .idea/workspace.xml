@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="finition du score">
+    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="ajout timer fonctionnel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695993960649</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ajout timer">
+      <option name="closed" value="true" />
+      <created>1695995054590</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695995054590</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ajout timer fonctionnel">
+      <option name="closed" value="true" />
+      <created>1695995249093</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695995249093</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +199,8 @@
     <MESSAGE value="version FX, ajout du mixedWord" />
     <MESSAGE value="version FX, ajout du score" />
     <MESSAGE value="finition du score" />
-    <option name="LAST_COMMIT_MESSAGE" value="finition du score" />
+    <MESSAGE value="ajout timer" />
+    <MESSAGE value="ajout timer fonctionnel" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout timer fonctionnel" />
   </component>
 </project>

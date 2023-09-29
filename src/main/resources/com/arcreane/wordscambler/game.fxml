@@ -47,17 +47,21 @@
                <font>
                   <Font size="22.0" />
                </font></Label>
-            <Label fx:id="alert" text="Label" />
+            <Label fx:id="alert">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
             </children>
         </VBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="300.0">
          <children>
-            <Label fx:id="test" text="Label">
+            <Label fx:id="test">
                <font>
                   <Font size="22.0" />
                </font>
             </Label>
-            <Label fx:id="scoreShow" text="gfdfg">
+            <Label fx:id="scoreShow">
                <font>
                   <Font size="29.0" />
                </font>
