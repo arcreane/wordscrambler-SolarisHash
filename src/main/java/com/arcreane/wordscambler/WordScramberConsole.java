@@ -7,7 +7,8 @@ public class WordScramberConsole {
     public void startGameConsole(){
         int difficulty = choseDifficulty();
         WordScramblerGame game = new WordScramblerGame(difficulty);
-        long timer = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
+        int score = 100;
         boolean play = true;
 
 
@@ -32,12 +33,14 @@ public class WordScramberConsole {
                     System.out.println("Voulez-vous continuez ? 1.Oui   2.Non");
                     Scanner continu = new Scanner(System.in);
                     if(continu.nextInt() == 2){
-                        System.out.println("Le mot original est : " + wordSelected);
+                        long endTime = System.currentTimeMillis();
+                        long duration = (startTime - endTime ) / 1000;
+                        System.out.println("Votre score est de : " + (score - duration));
                         manche = false;
                         play = false;
                     }
                     else
-                        manche = false;
+                        manche = true;
                 }
                 else{
                     System.out.println("Incorrect ! Veuillez réessayez");
@@ -48,8 +51,10 @@ public class WordScramberConsole {
                         scan = new Scanner(System.in);
                         int choice = scan.nextInt();
                         if(choice == 1) {
+                            System.out.println("Vous avez abandonné, votre est donc de 0");
                             manche = false;
                             play = false;
+                            System.exit(0);
                         }
                     }
                     //System.out.println("Mots a trouver " + wordMixed);
