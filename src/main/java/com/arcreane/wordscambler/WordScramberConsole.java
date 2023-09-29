@@ -5,6 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class WordScramberConsole {
     public void startGameConsole(){
+        System.out.println("------- Word Scramble-------");
         int difficulty = choseDifficulty();
         WordScramblerGame game = new WordScramblerGame(difficulty);
         long startTime = System.currentTimeMillis();
@@ -34,7 +35,7 @@ public class WordScramberConsole {
                     Scanner continu = new Scanner(System.in);
                     if(continu.nextInt() == 2){
                         long endTime = System.currentTimeMillis();
-                        long duration = (startTime - endTime ) / 1000;
+                        long duration = (endTime  -startTime) / 1000;
                         System.out.println("Le score est de : " + (score - duration));
                         manche = false;
                         play = false;
