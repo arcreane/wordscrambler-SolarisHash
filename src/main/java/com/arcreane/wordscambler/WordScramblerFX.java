@@ -97,6 +97,9 @@ public class WordScramblerFX {
             updateLabel(alert, "Bravo");
             endtime = System.currentTimeMillis();
 
+            System.out.println(startTime);
+            System.out.println(endtime);
+
             updateLabel(scoreShow, "" + WordScramblerGame.calculScore(score, startTime, endtime));
         } else {
             updateLabel(alert, "Rater");

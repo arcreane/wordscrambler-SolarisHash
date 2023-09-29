@@ -84,7 +84,7 @@ public class WordScramblerGame {
     }
 
     public static long calculScore(long p_score, long p_startTime, long p_endTime){
-        p_score = p_score - (p_startTime - p_endTime) / 1000;
+        p_score = p_score - (p_endTime - p_startTime) / 1000;
         return p_score;
     }
 }
