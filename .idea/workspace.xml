@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="modification label">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerGame.java" afterDir="false" />
+    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="correction score">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramberConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramberConsole.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695995389815</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="correction score">
+      <option name="closed" value="true" />
+      <created>1695995638632</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695995638632</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +219,7 @@
     <MESSAGE value="ajout timer" />
     <MESSAGE value="ajout timer fonctionnel" />
     <MESSAGE value="modification label" />
-    <option name="LAST_COMMIT_MESSAGE" value="modification label" />
+    <MESSAGE value="correction score" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction score" />
   </component>
 </project>

@@ -19,11 +19,11 @@ public class WordScramberConsole {
 
             int randomLine = rand.nextInt(game.wordTri.size());
             String wordSelected = game.wordTri.get(randomLine).trim().toLowerCase();
-            String wordMixed = game.mixWords(wordSelected);
+            String wordMixed = WordScramblerGame.mixWords(wordSelected);
 
 
             while(manche){
-                System.out.println("Mots a trouver : " + wordMixed);
+                System.out.println("Mots a trouve : " + wordMixed);
                 System.out.println("Quel est le mot : ");
                 Scanner scan = new Scanner(System.in);
                 String answer = scan.nextLine();
@@ -35,12 +35,11 @@ public class WordScramberConsole {
                     if(continu.nextInt() == 2){
                         long endTime = System.currentTimeMillis();
                         long duration = (startTime - endTime ) / 1000;
-                        System.out.println("Votre score est de : " + (score - duration));
+                        System.out.println("Le score est de : " + (score - duration));
                         manche = false;
                         play = false;
                     }
-                    else
-                        manche = true;
+
                 }
                 else{
                     System.out.println("Incorrect ! Veuillez réessayez");
@@ -51,6 +50,7 @@ public class WordScramberConsole {
                         scan = new Scanner(System.in);
                         int choice = scan.nextInt();
                         if(choice == 1) {
+                            System.out.println("Le mot etait :" + wordSelected);
                             System.out.println("Vous avez abandonné, votre est donc de 0");
                             manche = false;
                             play = false;
