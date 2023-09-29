@@ -13,7 +13,7 @@ import java.util.Objects;
 
 
 public class SelectDifficulty {
-    WordScramblerFX game;
+    private WordScramblerFX game;
 
     @FXML
     private Button buttonEasy;
@@ -28,21 +28,12 @@ public class SelectDifficulty {
     protected void easy(ActionEvent event) throws IOException {
         try {
             FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("game.fxml")));
-            //Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game.fxml")));
-
             Parent root = loader.load();
-            //Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game.fxml")));
             Scene scene = new Scene(root, 800, 400);
-
             game = loader.getController();
-            game = new WordScramblerFX(1);
-            //game.setDifficulty(1);
-
-
+            game.setDifficulty(1);
             Stage stage = (Stage) buttonEasy.getScene().getWindow(); // Obtenez le Stage actuel
             stage.setScene(scene);
-
-
         }catch (IOException e) {
             e.printStackTrace();
         }
@@ -51,8 +42,11 @@ public class SelectDifficulty {
 
     @FXML
     protected void medium(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game.fxml")));
+        FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("game.fxml")));
+        Parent root = loader.load();
         Scene scene = new Scene(root, 800, 400);
+        game = loader.getController();
+        game.setDifficulty(2);
         Stage stage = (Stage) buttonMedium.getScene().getWindow(); // Obtenez le Stage actuel
         stage.setScene(scene);
 
@@ -60,8 +54,11 @@ public class SelectDifficulty {
 
     @FXML
     protected void hard(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game.fxml")));
+        FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("game.fxml")));
+        Parent root = loader.load();
         Scene scene = new Scene(root, 800, 400);
+        game = loader.getController();
+        game.setDifficulty(3);
         Stage stage = (Stage) buttonHard.getScene().getWindow(); // Obtenez le Stage actuel
         stage.setScene(scene);
 

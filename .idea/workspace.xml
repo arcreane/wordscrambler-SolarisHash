@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Essai d'ajout de la difficulté sur l'interface graphique">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/FXMLController.java" afterDir="false" />
+    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Affichage graphique Jeu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695919334500</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Affichage graphique Jeu">
+      <option name="closed" value="true" />
+      <created>1695949431903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695949431903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +144,7 @@
     <MESSAGE value="Lien entre la fenetre home et la fenetre de selection" />
     <MESSAGE value="Lien entre la fenetre selection et la fenetre de jeu" />
     <MESSAGE value="Essai d'ajout de la difficulté sur l'interface graphique" />
-    <option name="LAST_COMMIT_MESSAGE" value="Essai d'ajout de la difficulté sur l'interface graphique" />
+    <MESSAGE value="Affichage graphique Jeu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Affichage graphique Jeu" />
   </component>
 </project>
