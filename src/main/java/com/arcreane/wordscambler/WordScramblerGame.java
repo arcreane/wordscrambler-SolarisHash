@@ -84,7 +84,12 @@ public class WordScramblerGame {
         goodWord = p_goodWord;
     }
 
-    public static boolean Verification(String p_userAnswer, String p_wordMixed) {
-        return p_userAnswer.equals(p_wordMixed);
+    public static boolean Verification(String p_userAnswer, String p_basicWord) {
+        return p_userAnswer.equals(p_basicWord);
+    }
+
+    public long calculScore (long p_score, long p_startTime, long p_endTime){
+        p_score -= (p_startTime - p_endTime) / 1000;
+        return p_score;
     }
 }

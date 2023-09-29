@@ -11,7 +11,6 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.Random;
 public class WordScramblerFX {
-
     @FXML
     private Button buttonEasy;
     @FXML
@@ -20,18 +19,27 @@ public class WordScramblerFX {
     @FXML
     private Button buttonHard;
     @FXML
-    private Button goBackButton;
-    @FXML
     public Button validateButton;
+    @FXML
+    private Label test;
 
     @FXML
     private Label wordToFind;
     @FXML
     private Label response;
     @FXML
+    private Label alert;
+    @FXML
+    private Label scoreShow;
+    @FXML
     private TextField wordAnswer;
 
     public int difficulty;
+    long score;
+    long startTime;
+    long endtime;
+    int timer;
+    String basicWord;
     String wordMixed;
     boolean result;
 
@@ -40,41 +48,50 @@ public class WordScramblerFX {
     public WordScramblerFX() {
         wordToFind = new Label();
         response = new Label();
+        test = new Label();
+        alert = new Label();
+        scoreShow = new Label();
         wordAnswer = new TextField();
-        WordScramblerGame game = new WordScramblerGame(difficulty);
-
-        int tentative = 1;
-        Random rand = new Random();
-
-        int randomLine = rand.nextInt(game.wordTri.size());
-        String wordSelected = game.wordTri.get(randomLine).trim().toLowerCase();
-        wordMixed = game.mixWords(wordSelected);
-
-        wordToFind.setText("Mots a trouver :");
-        wordToFind.setText(wordMixed);
-
-        if (result)
-            response.setText("bravo");
-        else
-            response.setText("Rate");
-
+        score = 100;
+        startTime = 0;
+        endtime = 0;
 
     }
 
     public void setDifficulty(int p_difficulty) {
         this.difficulty = p_difficulty;
-
         WordScramblerGame game = new WordScramblerGame(difficulty);
+        score = game.calculScore(score, startTime,endtime);
+        updateLabel(scoreShow, "score : " + score);
+
         int tentative = 1;
         Random rand = new Random();
         int randomLine = rand.nextInt(game.wordTri.size());
         game.setGoodWord(game.wordTri.get(randomLine).trim().toLowerCase());
-        String wordMixed = game.mixWords(game.goodWord);
+        basicWord = game.goodWord;
+        wordMixed = game.mixWords(game.goodWord);
+        System.out.println(wordMixed);
+
+        updateLabel(test, game.goodWord);
 
         updateLabel(wordToFind, wordMixed);
-
-
     }
+
+    public void validate(ActionEvent event) {
+
+        String userAnswer = wordAnswer.getText().trim().toLowerCase();
+        System.out.println("userAnswer: " + userAnswer);
+        System.out.println("wordMixed: " + wordMixed);
+        if(WordScramblerGame.Verification(userAnswer, basicWord)){
+            updateLabel(alert,"Bravo");
+        }
+        else
+        {
+            updateLabel(alert,"Rater");
+        }
+    }
+
+
 
     @FXML
     public void updateLabel(Label label, String text){
@@ -96,10 +113,5 @@ public class WordScramblerFX {
         setDifficulty(3);
     }
 
-    public void validate(ActionEvent event) {
-
-        String userAnswer = wordAnswer.getText().trim().toLowerCase();
-        result = WordScramblerGame.Verification(userAnswer, wordMixed);
-    }
 }
 
