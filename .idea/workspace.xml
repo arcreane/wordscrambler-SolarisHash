@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Lien entre la fenetre selection et la fenetre de jeu">
+    <list default="true" id="6ed45ec0-9ca2-4887-a41c-cc040a6d5272" name="Changes" comment="Essai d'ajout de la difficulté sur l'interface graphique">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/FXMLController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/SelectDifficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arcreane/wordscambler/WordScramblerFX.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/select-difficulty.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/arcreane/wordscambler/select-difficulty.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,7 @@
       <list>
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -52,9 +53,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Adam/Desktop/JAVA/demo",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.arcreane.wordscambler" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="WordScambler" />
@@ -103,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695915206682</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Essai d'ajout de la difficulté sur l'interface graphique">
+      <option name="closed" value="true" />
+      <created>1695919334500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695919334500</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +137,7 @@
     <MESSAGE value="Modification WordScramblerFX,enlève de certains fichiers inutiles" />
     <MESSAGE value="Lien entre la fenetre home et la fenetre de selection" />
     <MESSAGE value="Lien entre la fenetre selection et la fenetre de jeu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lien entre la fenetre selection et la fenetre de jeu" />
+    <MESSAGE value="Essai d'ajout de la difficulté sur l'interface graphique" />
+    <option name="LAST_COMMIT_MESSAGE" value="Essai d'ajout de la difficulté sur l'interface graphique" />
   </component>
 </project>

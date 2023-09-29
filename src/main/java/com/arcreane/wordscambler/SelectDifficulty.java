@@ -6,16 +6,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
 
-import static com.arcreane.wordscambler.WordScramblerUI.choseDifficulty;
 
 public class SelectDifficulty {
-    //WordScramblerFX game;
+    WordScramblerFX game;
 
     @FXML
     private Button buttonEasy;
@@ -31,13 +29,20 @@ public class SelectDifficulty {
         try {
             FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("game.fxml")));
             //Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game.fxml")));
+
             Parent root = loader.load();
             //Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("game.fxml")));
             Scene scene = new Scene(root, 800, 400);
+
+            game = loader.getController();
+            game = new WordScramblerFX(1);
+            //game.setDifficulty(1);
+
+
             Stage stage = (Stage) buttonEasy.getScene().getWindow(); // Obtenez le Stage actuel
             stage.setScene(scene);
-            WordScramblerFX game = loader.getController();
-            game.setDifficulty(1);
+
+
         }catch (IOException e) {
             e.printStackTrace();
         }
