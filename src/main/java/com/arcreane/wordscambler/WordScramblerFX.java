@@ -2,7 +2,6 @@ package com.arcreane.wordscambler;
 
 import javafx.animation.Animation;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -74,7 +73,7 @@ public class WordScramblerFX {
         score = game.calculScore(score, startTime, endtime);
         updateLabel(scoreShow, "score : " + score);
 
-        startTimer();
+        updateLabel(timeLabel,startTimer());
         startTime = System.currentTimeMillis();
 
         int tentative = 1;
@@ -126,7 +125,7 @@ public class WordScramblerFX {
         setDifficulty(3);
     }
 
-    private void startTimer() {
+    private String startTimer() {
         Duration duration = Duration.seconds(1);
         KeyFrame keyFrame = new KeyFrame(duration, event -> {
             timerValue++;
@@ -137,6 +136,7 @@ public class WordScramblerFX {
         timeline.setCycleCount(Animation.INDEFINITE);
 
         timeline.play();
+        return null;
     }
 
     private String getTimeString(int seconds) {

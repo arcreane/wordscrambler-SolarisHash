@@ -43,7 +43,10 @@
                         <Font size="14.0" />
                     </font>
                 </Button>
-                <Label fx:id="timerLabel" />
+                <Label fx:id="timeLabel">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
             <Label fx:id="alert" text="Label" />
             </children>
         </VBox>
